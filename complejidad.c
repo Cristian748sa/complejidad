@@ -3,6 +3,7 @@
 j=j-2; //oe 2
 i=j*12; //oe 2
 printf("%d\n",i); //oe 0
+// O(n) = 4
 
 // b)
 for (i = 0; i < n; i++) 
@@ -36,7 +37,9 @@ while (i<10) {      // oe 1
   // O(n,j) = 40n-40j+21
 
 
-2) Desarrollar un algoritmo para calcular la media de un vector de n elementos.
+/*2) Desarrollar un algoritmo para calcular la media de un vector de n elementos.
 Calcular luego, su tiempo de ejecución.
+
 3) Desarrollar un algoritmo para calcular el elemento máximo de un vector y luego
 calcular su tiempo de ejecución.
+*/
