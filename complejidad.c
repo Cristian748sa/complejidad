@@ -38,8 +38,37 @@ while (i<10) {      // oe 1
 
 
 /*2) Desarrollar un algoritmo para calcular la media de un vector de n elementos.
-Calcular luego, su tiempo de ejecución.
+Calcular luego, su tiempo de ejecución.*/
 
+float promedio(int vec[], int n){
+	int promedio = 0;                     // oe 1
+	int i;
+	i = 0;                                 // oe 1
+	while(i<n){                            // oe 1
+		promedio = promedio + vec[i];  // oe 3
+		i++;                           // oe 2
+		}
+	return promedio/n;                     // oe 1
+	}
+	// O(n) = 2+1+ n(5+1) +1 = 3+n6+1 
+	//rta: O(n)  = 6n+4
+	
+
+/*
 3) Desarrollar un algoritmo para calcular el elemento máximo de un vector y luego
 calcular su tiempo de ejecución.
 */
+
+int maximo(int ls[], int n){
+	int max;  
+	max = ls[0];  			// oe 2
+	int i=1;  			// oe 1
+	while(i<n){                      // oe 1
+		if (ls[i]>max)           // oe 2
+			max = ls[i];    // oe 2
+		}	
+	return max;             
+	}
+	// O(n) = 3+1+(n-1)*(4+1) = 4+n5-5
+	// rta:  O(n) = 5n-1
+
